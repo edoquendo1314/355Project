@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="Style.css" />
+    <meta charset="utf-8" />
+    <title>SARA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="google.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".result").hide();
+        });
+    </script>
+
+    <style>
+        #a {
+            display: none;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="heading">
+                <h1>SARA</h1>
+            </div>
+
+            <nav>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home </a>
+                        </li>
+
+                        <li><a href="#">Course &#9662;</a>
+                            <ul class="dropdown">
+                                <a href="https://learn.zybooks.com/zybook/CUNYCSCI355TeitelmanFall2019" target="_blank">Zybook</a>
+                                <a href="https://app.tophat.com/e/972963/assigned" target="_blank">TopHat</a>
+                                <a href="https://drive.google.com/open?id=1DJYcquLa7z83dMEDOl3up6VJQiXykQUs" target="_blank">Google Drive</a>
+                                <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
+                            </ul>
+                        </li>
+
+
+                        <li>
+                            <a href="#">Search &#9662;</a>
+                            <ul class="dropdown">
+                                <li><a href="downloadTest.html">File Search</a></li>
+                                <li><a href="apiSearch.html">Google API</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">Browser &#9662;</a>
+                            <ul class="dropdown">
+                                <li><a href="Browser-info.html#brinfo">Navigator</a></li>
+                                <li><a href="Browser-info.html#winfo">Window</a></li>
+                                <li><a href="Browser-info.html#sinfo">Screen</a></li>
+                                <li><a href="Browser-info.html#linfo">Location</a></li>
+                                <li><a href="Browser-info.html#geoinfo">Geolocation</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="About.html">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="spacer">
+
+    </div>
+    <gcse:search>
+        <gcse class="container-search">
+            <section class="search">
+                <form action="#" class="js-search-form">
+                    <input type="text" class="js-query" placeholder="Search here...">
+                    <button type="submit">Search</button>
+                </form>
+            </section>
+        </gcse>
+
+    
+
+        <div class="results-container">
+
+        </div>
+        <div class="buttonsOnFixed2">
+            <button class="btn" id="test" onclick="downloadResults()" id="Downloadbtn">Download</button>
+            <select id="choices">
+                <option value="CSV">CSV</option>
+                <option value="JSON">JSON</option>
+                <option value="XML">XML</option>
+            </select>
+        </div>
+        <a href="" id="a" download onclick="hideLink()">Click here to download your file</a>
+        <script src="downloadapi.js"></script>
+</body>
+
+</html>

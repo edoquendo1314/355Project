@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="Style.css" />
+    <meta charset="utf-8" />
+    <title>SARA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="heading">
+                <h1>SARA</h1>
+            </div>
+
+            <nav>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home </a>
+                        </li>
+
+                        <li><a href="#">Course &#9662;</a>
+                            <ul class="dropdown">
+                                <a href="https://learn.zybooks.com/zybook/CUNYCSCI355TeitelmanFall2019" target="_blank">Zybook</a>
+                                <a href="https://app.tophat.com/e/972963/assigned" target="_blank">TopHat</a>
+                                <a href="https://drive.google.com/open?id=1DJYcquLa7z83dMEDOl3up6VJQiXykQUs" target="_blank">Google Drive</a>
+                                <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
+                            </ul>
+                        </li>
+
+
+                        <li>
+                            <a href="#">Search &#9662;</a>
+                            <ul class="dropdown">
+                                <li><a href="downloadTest.html">File Search</a></li>
+                                <li><a href="apiSearch.html">Google API</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">Browser &#9662;</a>
+                            <ul class="dropdown">
+                                <li><a href="Browser-info.html#brinfo">Navigator</a></li>
+                                <li><a href="Browser-info.html#winfo">Window</a></li>
+                                <li><a href="Browser-info.html#sinfo">Screen</a></li>
+                                <li><a href="Browser-info.html#linfo">Location</a></li>
+                                <li><a href="Browser-info.html#geoinfo">Geolocation</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="About.html">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <div>
+        <div class="uploadbtn-container">
+            <h1 class= "upload-btn-text">Try uploading your own file!</h1>
+            <div class="upload-btn-wrapper">
+                <button class="btn-upload btn btn-primary">Upload a file</button>
+                <input type="file" name="myfile" class="file-upload" onchange="read(this)" />
+            </div>
+
+
+        </div>
+    </div>
+
+    <section id="search-results">
+        <div class="results"> </div>
+    </section>
+
+    <script type="text/javascript" src="upload.js"></script>
+    <script src="download.js" charset="utf-8"></script>
+    <script src="script.js"></script>
+
+</body>
+
+
+
+</html>
